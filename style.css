@@ -1,0 +1,85 @@
+/* Basic Reset & Defaults */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.content {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* The Modal (background overlay) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    /* For fade-in effect (optional) */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    /* For slide-in effect (optional) */
+    transform: translateY(-50px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* The Close Button */
+.close-btn {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* When the modal is shown */
+.modal.active {
+    display: block; /* Make it visible */
+    opacity: 1; /* Fade in */
+}
+.modal.active .modal-content {
+     transform: translateY(0); /* Slide in */
+}
